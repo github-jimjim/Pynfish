@@ -1,3 +1,32 @@
 # Pynfish
-An very basic UCI chess engine without many communication option at around 1500 elo
-The rust versi
+
+**Author:** Jimmy Luong
+
+## Overview
+Pynfish is a Python-based chess engine that achieves an approximate Elo rating of **1500**. This was one of my first attempts at creating a chess engine. While I have since developed a more advanced version in Rust with an Elo of **3100**, I am not yet ready to share the Rust implementation on GitHub.
+
+## Features
+- Playable against Pynfish using:
+  - `main.py`: Can be compiled and used in chess arenas like Lucas Chess.
+  - `ui.py`: Provides a command-line interface for playing chess directly.
+
+## Getting Started
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-repo/pynfish.git
+   cd pynfish
+   ```
+2. Run the UI to play:
+   ```bash
+   python ui.py
+   ```
+3. Compile `main.py` to use the engine in external chess arenas.
+
+## Notes
+Pynfish is a foundational project and represents my learning journey into chess engine development. The Rust-based version, though more powerful, remains private for now.
+
+## License
+MIT License (or specify another license).
+
+---
+Feel free to open issues or contribute improvements to Pynfish!
