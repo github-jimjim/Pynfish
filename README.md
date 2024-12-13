@@ -7,7 +7,7 @@ Pynfish is a Python-based chess engine that achieves an approximate Elo rating o
 
 ## Features
 - Playable against Pynfish using:
-  - `main.py`: Can be compiled and used in chess arenas like Lucas Chess.
+  - `main.py`: Can be compiled and used in chess arenas like Lucas Chess or my self developed one.
   - `ui.py`: Provides a command-line interface for playing chess directly.
 
 ## Getting Started
@@ -27,6 +27,12 @@ Pynfish is a foundational project and represents my learning journey into chess 
 
 ## License
 MIT License (or specify another license).
+
+## External Link(s)
+```bash
+https://github.com/github-jimjim/Arenmy
+```bash
+
 
 ---
 Feel free to open issues or contribute improvements to Pynfish!
