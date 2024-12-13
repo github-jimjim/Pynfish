@@ -31,7 +31,7 @@ MIT License (or specify another license).
 ## External Link(s)
 ```bash
 https://github.com/github-jimjim/Arenmy
-```bash
+```
 
 
 ---
