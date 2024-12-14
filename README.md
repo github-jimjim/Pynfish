@@ -26,7 +26,7 @@ Pynfish is a Python-based chess engine that achieves an approximate Elo rating o
 Pynfish is a foundational project and represents my learning journey into chess engine development. The latest version, though more powerful, remains private for now.
 
 ## License
-MIT License (or specify another license).
+GPL-3.0 license
 
 ## External Link(s)
 ```bash
