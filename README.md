@@ -29,9 +29,9 @@ Pynfish is a foundational project and represents my learning journey into chess 
 GPL-3.0 license
 
 ## External Link(s)
-```bash
-https://github.com/github-jimjim/Arenmy
-```
+[Example Arena](https://github.com/github-jimjim/Arenmy)
+[Demonstration games against JOMFISH 10 DEV (3200) at time pressure 0.1 seconds per move:]([https://www.openai.com](https://drive.google.com/file/d/1lfz2S88zeSJaAk8G1VvVkqoOQZck5dtf/view?usp=drive_link))
+
 
 
 ---
