@@ -26,6 +26,7 @@ Pynfish is a Python-based chess engine that achieves an approximate Elo rating o
 
 ## Notes
 Pynfish is currently in Beta version, and the Alpha version will be released in a few days after this version has undergone some testing.
+If you want to compile the libary for the nnue by your own visit https://github.com/dshawul/nnue-probe. I compiled it for Windows.
 
 ## Acknowledgements
 A big thanks to [https://github.com/dshawul/nnue-probe](https://github.com/dshawul/nnue-probe) for providing resources that greatly helped me in developing this engine. Since I couldn't find another compatible NNUE version, I had to use the only available one, even though it is quite old. If anyone could develop or find a newer NNUE version for Rust or Python, I would greatly appreciate the help!
