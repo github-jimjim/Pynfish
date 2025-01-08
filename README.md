@@ -25,6 +25,7 @@ Pynfish is a Python-based chess engine that achieves an approximate Elo rating o
    ```bash
    pyinstaller --onefile --hidden-import=chess_engine uci.py
    ```
+3. IMPORTANT: Do not set a maximum thinking time for the engine or a maximum depth. It will automatically search depth 4 with nnue which can take 3-15 seconds per move.
 
 ## Notes
 Pynfish v.0.2.0 is far from perfect and I would be very happy about any improvements ideas or a newer version of libnnueprobe
