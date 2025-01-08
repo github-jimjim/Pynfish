@@ -9,6 +9,7 @@ Pynfish is a Python-based chess engine that achieves an approximate Elo rating o
 - Completely redesigned, as I was not satisfied with the previous structure – now it's easier to create new versions.
 - It now uses Minimax and Alpha-Beta pruning for efficient search.
 - Integrates Stockfish's old NNUE (2020 version), combining Stockfish's NNUE with the classic search method.
+- stronger, faster, better
 
 ## Features
 - Playable against Pynfish using:
