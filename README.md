@@ -1,5 +1,5 @@
 
-# Pynfish v0.2.0 BETA
+# Pynfish v0.2.0 APLPHA
 
 **Author:** Jimmy Luong
 
@@ -28,7 +28,7 @@ Pynfish is a Python-based chess engine that achieves an approximate Elo rating o
    ```
 
 ## Notes
-Pynfish is currently in Beta version, and the Alpha version will be released in a few days after this version has undergone some testing.
+Pynfish v.0.2.0 is far from perfect and I would be very happy about any improvements ideas or a newer version of libnnueprobe
 If you want to compile the libary for the nnue by your own visit https://github.com/dshawul/nnue-probe. I compiled it for Windows.
 
 ## Acknowledgements
@@ -39,7 +39,6 @@ GPL-3.0 License
 
 ## External Links
 - [Example Arena](https://github.com/github-jimjim/Arenmy)
-- [Demonstration games against JOMFISH 10 DEV (3200) with time pressure of 0.1 seconds per move](https://drive.google.com/file/d/1lfz2S88zeSJaAk8G1VvVkqoOQZck5dtf/view?usp=drive_link)
-
+- [Download PGN file of a small tournament between Pynfish 1 vs Pynfish 2 Alpha/Beta](https://drive.google.com/file/d/1Sq6ptOuKYYrNAw8Y0393LpT-81ufu6aR/view?usp=sharing)
 ---
 Feel free to open issues or contribute improvements to Pynfish!
