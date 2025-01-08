@@ -4,6 +4,7 @@ import signal
 import time
 import cProfile
 from ctypes import cdll, c_char_p, c_int
+import os
 
 class Engine:
     
@@ -85,7 +86,9 @@ class Engine:
         
         self.nnue = cdll.LoadLibrary(r"C:\Users\jimmy\Desktop\pynfish version 2\nnue\libnnueprobe.so")
         self.nnue.nnue_init.argtypes = [c_char_p]
-        self.nnue.nnue_init(b"nnue\nnue.nnue")
+        nnue_path = os.path.join(os.getcwd(), "nnue/nnue.nnue")
+        self.nnue.nnue_init(nnue_path.encode())
+        
 
     def random_response(self):
         response = random.choice(list(self.board.legal_moves))
@@ -116,8 +119,12 @@ class Engine:
 
         fen = self.board.fen().encode()
         nnue_score = self.nnue.nnue_evaluate_fen(c_char_p(fen))
-
-        score = score * 0.25 + nnue_score * 0.75
+        
+        # because the NNUE is very weak with black
+        if self.board.turn == chess.WHITE:
+            score = score * 0.25 + nnue_score * 0.75
+        else:
+            score = score * 0.95 + nnue_score * 0.05
 
         return score
 
