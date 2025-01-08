@@ -1,5 +1,4 @@
-
-# Pynfish v0.2.0 APLPHA
+# Pynfish v0.2.0
 
 **Author:** Jimmy Luong
 
