@@ -23,6 +23,9 @@ Pynfish is a Python-based chess engine that achieves an approximate Elo rating o
    ```
 2. Change the lines where you need the directory (chess_engine.py).
 3. Compile `main.py` to use the engine in external chess arenas.
+   ```bash
+   pyinstaller --onefile --hidden-import=chess_engine uci.py
+   ```
 
 ## Notes
 Pynfish is currently in Beta version, and the Alpha version will be released in a few days after this version has undergone some testing.
