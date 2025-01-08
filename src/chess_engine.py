@@ -84,7 +84,9 @@ class Engine:
         self.board.set_fen(fen)
         self.leaves_reached = 0
         
-        self.nnue = cdll.LoadLibrary(r"C:\Users\jimmy\Desktop\pynfish version 2\nnue\libnnueprobe.so")
+        nnue_probe_path = nnue_path = os.path.join(os.getcwd(), "nnue/libnnueprobe.so")
+        nnue_path = os.path.join(os.getcwd(), "nnue/nnue.nnue")
+        self.nnue = cdll.LoadLibrary(nnue_probe_path)
         self.nnue.nnue_init.argtypes = [c_char_p]
         nnue_path = os.path.join(os.getcwd(), "nnue/nnue.nnue")
         self.nnue.nnue_init(nnue_path.encode())
