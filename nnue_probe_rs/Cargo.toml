@@ -1,0 +1,14 @@
+[package]
+name = "pynnue"
+version = "0.2.0"
+edition = "2021"
+
+[lib]
+name = "pynnue"
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = { version = "0.17", features = ["extension-module"] }
+chess = "2.0"    
+byteorder = "1.4"
+once_cell = "1.17"
