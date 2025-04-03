@@ -11,6 +11,13 @@ Pynfish is a Python-based chess engine that achieves an approximate Elo rating o
 - Integrates Stockfish's old NNUE (2020 version), combining Stockfish's NNUE with the classic search method.
 - stronger, faster, better
 
+## Update
+- Uses self made libary for NNUE-Probe. You have 2 options:
+  1. compile it by yourself
+  2. ```bash
+     pip install nnue-probe
+     ```
+
 ## Performance Comparison
 | Engine          | Winrate % | Wins     | Looses   | Draws    |
 |-----------------|-----------|----------|----------|----------|
@@ -37,13 +44,6 @@ Pynfish is a Python-based chess engine that achieves an approximate Elo rating o
    pyinstaller --onefile --hidden-import=chess_engine --name=pynfish uci.py
    ```
 3. IMPORTANT: Do not set a maximum thinking time for the engine or a maximum depth. It will automatically search depth 4 with nnue which can take 3-15 seconds per move.
-
-## Notes
-Pynfish v.0.2.0 is far from perfect and I would be very happy about any improvements ideas or a newer version of libnnueprobe
-If you want to compile the libary for the nnue by your own visit https://github.com/dshawul/nnue-probe. I compiled it for Windows.
-
-## Acknowledgements
-A big thanks to [https://github.com/dshawul/nnue-probe](https://github.com/dshawul/nnue-probe) for providing resources that greatly helped me in developing this engine. Since I couldn't find another compatible NNUE version, I had to use the only available one, even though it is quite old. If anyone could develop or find a newer NNUE version for Rust or Python, I would greatly appreciate the help!
 
 ## License
 GPL-3.0 License
