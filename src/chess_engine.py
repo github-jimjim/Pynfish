@@ -2,9 +2,8 @@ import chess
 import random
 import signal
 import time
-import cProfile
-from ctypes import cdll, c_char_p, c_int
 import os
+import nnue-probe
 
 class Engine:
     
@@ -84,12 +83,7 @@ class Engine:
         self.board.set_fen(fen)
         self.leaves_reached = 0
         
-        nnue_probe_path = nnue_path = os.path.join(os.getcwd(), "nnue/libnnueprobe.so")
-        nnue_path = os.path.join(os.getcwd(), "nnue/nnue.nnue")
-        self.nnue = cdll.LoadLibrary(nnue_probe_path)
-        self.nnue.nnue_init.argtypes = [c_char_p]
-        nnue_path = os.path.join(os.getcwd(), "nnue/nnue.nnue")
-        self.nnue.nnue_init(nnue_path.encode())
+        nnue_parser.init_nnue_py("final.jnn")
         
 
     def random_response(self):
@@ -120,7 +114,7 @@ class Engine:
                 score -= self.square_table[i][square]
 
         fen = self.board.fen().encode()
-        nnue_score = self.nnue.nnue_evaluate_fen(c_char_p(fen))
+        nnue_score = nnue_parser.eval_nnue_py(fen)
         
         # because the NNUE is very weak with black
         if self.board.turn == chess.WHITE:
