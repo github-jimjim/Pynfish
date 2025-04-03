@@ -284,7 +284,7 @@ class Engine:
 
 if __name__=="__main__":
 
-    fen = "r2qkbr1/ppp1pppp/2n1b2n/8/8/5P2/PPPP2PP/RNB1KBNR b KQq - 0 6"
+    fen = "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1"
 
     newengine = Engine(fen)
 
