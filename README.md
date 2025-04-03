@@ -15,7 +15,7 @@ Pynfish is a Python-based chess engine that achieves an approximate Elo rating o
 - Uses self made libary for NNUE-Probe. You have 2 options:
   1. compile it by yourself
   2. ```bash
-     pip install nnue-probe
+     pip install nnue_parser
      ```
 
 ## Performance Comparison
